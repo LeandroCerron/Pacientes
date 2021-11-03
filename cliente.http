@@ -1,0 +1,33 @@
+GET http://localhost:4000/pacientes
+
+###
+
+POST http://localhost:4000/pacientes
+Content-Type: application/json
+
+   
+{
+"nombre": "Santiago",
+"propietario": "Santiago",
+"fecha": "10-12-10",
+"hora": "10:20",
+"telefono": "321321321",
+"sintomas": "Cansado"
+}
+
+###
+
+PUT  http://localhost:4000/pacientes/6182a3d5023a9b30f8c6e882
+Content-Type: application/json
+
+{
+    "nombre": "Leandro",
+    "propietario": "Leandro",
+    "fecha": "10-12-10",
+    "hora": "10:20",
+    "telefono": "321321321",
+    "sintomas": "Dolor de cabeza"
+  }
+
+###
+DELETE   http://localhost:4000/pacientes/6182a3d5023a9b30f8c6e882
